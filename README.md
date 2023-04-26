@@ -1,6 +1,7 @@
-Golang在开发web服务、网络编程、云计算等领域，都有着广泛的应用
+> Golang在开发web服务、网络编程、云计算等领域，都有着广泛的应用
 
-# 主要框架
+# Golang主要框架
+```
 Gin
 web应用框架，使用httprouter处理路由，Restful API风格
 支持中间件机制，可以实现日志、认证、路由等功能
@@ -21,6 +22,25 @@ go-micro
 Gorm
 ORM框架，支持多种数据库，比如MySQL、PostgreSQL、SQLite等
 支持事务处理、预加载、关联查询等，支持数据库迁移、表结构自动生成等
+```
 
+# 技术栈
+```
+框架：Gin
+对象关系映射：Gorm
+路由：httprouter
+数据库：MySQL
+```
 
-Gin + Gorm + httprouter
+# 项目结构
+```
+config              --- 系统配置
+controllers         --- 控制器
+db                  --- 数据库
+middlewares         --- 中间件
+models              --- 模型
+routers             --- 路由
+utils               --- 工具类
+go.mod              --- mod文件
+main.go             --- 入口文件
+```
